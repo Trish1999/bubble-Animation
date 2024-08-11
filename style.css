@@ -1,0 +1,104 @@
+body{
+    margin:0;
+    padding:0;
+
+}
+.a{
+    width:100vw;
+    height:100vh;
+    background-image: url(/background.png);
+    background-size: cover;
+}
+.logo{
+    width:160px;
+    height:80px;
+background:linear-gradient(rgb(10, 159, 228), white,rgb(10, 159, 228));   
+}
+.navbar{
+    width:auto;
+    height:10%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+   padding:1rem 4rem 0.6rem 4rem;
+
+}
+button{
+    color:blue;
+    padding:10px 25px;
+    background-color: transparent;
+    border:1px solid #fff;
+    border-radius: 1rem;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: large;
+}
+.content{
+    color:white;
+    margin-top:40vh;
+    margin-left:6%;
+    transform:translateY(-50%);
+    z-index:-1;
+}
+h1{
+    font-size: 3.5rem;
+}
+.bubbles img{
+    width: 70px;
+    animation:bubbles 5s linear infinite;
+}
+.bubbles{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    position:absolute;
+    bottom:-100px;
+}
+@keyframes bubbles{
+    0%{
+        transform:translateY(0);
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+        filter: brightness(150%);
+    }
+    70%{
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-95vh);
+        opacity:0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 1s;
+    width:60px;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 6s;
+    width: 80px;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 9s;
+    width: 120px;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 5s;
+    width: 40px;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 4s;
+    width: 90px;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 10s;
+    width: 50px;
+}
+.bubbles img:nth-child(7) {
+    animation-delay: 3s;
+    width: 90px;
+}
