@@ -1,13 +1,14 @@
 body{
     margin:0;
-    padding:0;
-
+    padding: 0;
 }
-.a{
-    width:100vw;
-    height:100vh;
+.main {
+    width: 100vw;
+    height: 100vh;
     background-image: url(/background.png);
     background-size: cover;
+    position: relative;
+        overflow: hidden;
 }
 .logo{
     width:160px;
@@ -47,17 +48,17 @@ h1{
 }
 .bubbles img{
     width: 70px;
-    animation:bubbles 5s linear infinite;
+    animation: bubble 5s linear infinite;
 }
-.bubbles{
-    width:100%;
+.bubbles {
     display:flex;
     align-items: center;
     justify-content: space-around;
-    position:absolute;
-    bottom:-100px;
+    position: absolute;
+        bottom: -100px;
+        width: 100vw;
 }
-@keyframes bubbles{
+@keyframes bubble {
     0%{
         transform:translateY(0);
         opacity:0;
@@ -84,7 +85,7 @@ h1{
 }
 .bubbles img:nth-child(3) {
     animation-delay: 9s;
-    width: 120px;
+    width: 100px;
 }
 .bubbles img:nth-child(4) {
     animation-delay: 5s;
